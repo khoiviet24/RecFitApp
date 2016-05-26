@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root_register"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.parse.starter.Register"
+    android:background="@drawable/register"
+    >
+
+    <ImageView
+        android:id="@+id/registerLogo"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/layout_main_register"
+        android:layout_weight=".75">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/full_name_txt"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".45"
+                android:inputType="textPersonName"
+                android:hint="First Name"
+                android:ems="10"
+                android:id="@+id/firstRegister_txt"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:theme="@style/RecFitYellow"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".45"
+                android:inputType="textPersonName"
+                android:hint="Last Name"
+                android:ems="10"
+                android:id="@+id/lastRegister_txt"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:theme="@style/RecFitYellow"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Username"
+            android:ems="10"
+            android:id="@+id/usernameRegister_txt"
+            android:layout_below="@+id/full_name_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:theme="@style/RecFitYellow"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:ems="10"
+            android:id="@+id/emailRegister_txt"
+            android:layout_below="@+id/usernameRegister_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:theme="@style/RecFitYellow"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Confirm Email"
+            android:ems="10"
+            android:id="@+id/confirmEmailRegister_txt"
+            android:layout_below="@+id/emailRegister_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:theme="@style/RecFitYellow"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:ems="10"
+            android:id="@+id/passwordRegister_txt"
+            android:layout_below="@+id/confirmEmailRegister_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:theme="@style/RecFitYellow"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:ems="10"
+            android:id="@+id/confirmPasswordRegister_txt"
+            android:layout_below="@+id/passwordRegister_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:theme="@style/RecFitYellow"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/register_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/male_btn"
+            android:layout_below="@+id/confirmPasswordRegister_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:checked="false"
+            android:onClick="selectGender"
+            android:textColor="@color/white"
+            android:theme="@style/RecFitYellow"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/female_btn"
+            android:checked="false"
+            android:layout_alignTop="@+id/male_btn"
+            android:layout_toRightOf="@+id/male_btn"
+            android:layout_toEndOf="@+id/male_btn"
+            android:layout_marginLeft="46dp"
+            android:layout_marginStart="46dp"
+            android:onClick="selectGender"
+            android:textColor="@color/white"
+            android:theme="@style/RecFitYellow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/select_age_group"
+            android:id="@+id/ageGroup_txt"
+            android:layout_below="@+id/male_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/white"
+            android:theme="@style/RecFitYellow"
+            android:paddingTop="3dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_alignTop="@+id/ageGroup_txt"
+            android:layout_toRightOf="@+id/ageGroup_txt"
+            android:layout_toEndOf="@+id/ageGroup_txt"
+            android:theme="@style/RecFitYellow">
+
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/gym_membership_txt"
+            android:text="Gym Membership:"
+            android:layout_below="@+id/ageGroup_txt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white"
+            android:theme="@style/RecFitYellow"
+            android:paddingTop="10dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerGym"
+            android:layout_alignTop="@+id/gym_membership_txt"
+            android:layout_toRightOf="@+id/gym_membership_txt"
+            android:layout_toEndOf="@+id/gym_membership_txt"
+            android:theme="@style/RecFitYellow"
+            android:paddingTop="7dp">
+        </Spinner>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gym_membership_edit"
+            android:layout_below="@id/spinnerGym"
+            android:textColor="@color/white"
+            android:theme="@style/RecFitYellow"
+            android:textColorHint="@color/white"
+            android:hint="Enter the name of your gym"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

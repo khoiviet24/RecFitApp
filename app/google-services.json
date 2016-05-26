@@ -1,0 +1,96 @@
+{
+  "project_info": {
+    "project_number": "880176324451",
+    "project_id": "recfit-955"
+  },
+  "client": [
+    {
+      "client_info": {
+        "android_client_info": {
+          "package_name": "com.parse.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880176324451-2l558qjsoqjjplpom5qvgjd9v6aqlji0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parse.starter",
+            "certificate_hash": "27B7B94B73041812CE83E8079C34848253E787AD"
+          }
+        },
+        {
+          "client_id": "880176324451-7krnucbr2e5l3dijpqmce761sro0bg5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6aXkxXuTKeHhSFXbPg16nao-w361DU2Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880176324451:android:49bcb6a545fa8cda",
+        "android_client_info": {
+          "package_name": "khoiviet24.recfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880176324451-4doo951bl85cebnso8e12g65abusq7fe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "khoiviet24.recfit",
+            "certificate_hash": "27B7B94B73041812CE83E8079C34848253E787AD"
+          }
+        },
+        {
+          "client_id": "880176324451-7krnucbr2e5l3dijpqmce761sro0bg5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6aXkxXuTKeHhSFXbPg16nao-w361DU2Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-77946250-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880176324451-7krnucbr2e5l3dijpqmce761sro0bg5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2,
+          "test_banner_ad_unit_id": "ca-app-pub-3940256099942544/6300978111",
+          "test_interstitial_ad_unit_id": "ca-app-pub-3940256099942544/1033173712"
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

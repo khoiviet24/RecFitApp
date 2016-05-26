@@ -1,0 +1,89 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dimscreen"
+    android:foreground="@drawable/dim_foreground_shape"
+    >
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:id="@+id/invite"
+    tools:context="com.parse.starter.Invite"
+    android:background="@drawable/create_background">
+
+    <!--Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Invite"
+        android:id="@+id/invite_btn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/auto_complete_txt"
+        android:background="@color/grey" /-->
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/invite_list"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/publish_btn"
+        android:layout_below="@+id/auto_complete_txt" />
+
+    <!--AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/auto_complete_txt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:theme="@style/RecFitYellow"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /-->
+
+    <khoiviet24.recfit.CustomAutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/auto_complete_txt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:theme="@style/RecFitYellow"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Review"
+        android:id="@+id/publish_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/grey"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Back"
+        android:id="@+id/back_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/grey"/>
+
+</RelativeLayout>
+</FrameLayout>

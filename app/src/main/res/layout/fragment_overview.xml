@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="khoiviet24.recfit.Overview"
+    android:id="@+id/overview_fragment"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/greyed_out_text"
+        android:id="@+id/overview_name_txt"
+        android:background="@drawable/edittext_bottom_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/greyed_out_text"
+        android:id="@+id/overview_equipment_txt"
+        android:background="@drawable/edittext_bottom_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/greyed_out_text"
+        android:id="@+id/overview_fees_txt"
+        android:background="@drawable/edittext_bottom_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/greyed_out_text"
+        android:id="@+id/overview_max_attendance_txt"
+        android:background="@drawable/edittext_bottom_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/greyed_out_text"
+        android:id="@+id/overview_date_txt"
+        android:background="@drawable/edittext_bottom_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/greyed_out_text"
+        android:id="@+id/overview_time_txt"
+        android:background="@drawable/edittext_bottom_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/greyed_out_text"
+        android:id="@+id/overview_address_txt"
+        android:background="@drawable/edittext_bottom_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/greyed_out_text"
+        android:id="@+id/overview_invite_list_txt"
+        android:background="@drawable/edittext_bottom_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Back"
+            android:id="@+id/back_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/grey"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Publish"
+            android:id="@+id/done_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/grey"/>
+    </RelativeLayout>
+</LinearLayout>

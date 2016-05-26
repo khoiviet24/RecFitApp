@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/home"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:id="@+id/profile_img"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/home_button_layout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="51dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="@string/home_fragment_create"
+                android:id="@+id/home_create_btn"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="@string/home_fragment_search"
+                android:id="@+id/home_search_btn"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:id="@+id/name_txt"
+            android:layout_marginTop="165dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:id="@+id/location_txt"
+            android:layout_below="@id/name_txt"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_current_location"
+            android:layout_alignTop="@+id/location_txt"
+            android:layout_alignBottom="@+id/location_txt"
+            android:layout_toLeftOf="@+id/location_txt"
+            android:layout_toStartOf="@+id/location_txt" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:id="@+id/interests_txt"
+            android:layout_below="@+id/location_txt"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"
+            android:text="Click to Edit Interests"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <ImageView
+            android:id="@+id/home_fragment_button_box"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="51dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:id="@+id/test_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

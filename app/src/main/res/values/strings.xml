@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">RecFit</string>
+
+    <string name="parse_app_id">ulEsf6zMhhWMh8e8APu0URhuZ0JrRTQKAZFZEWzv</string>
+    <string name="parse_client_key">MtdtE9zuc7PC2dq0VC5DMPQRL3ZJz1LakufUXttf</string>
+    <string name="facebook_app_id">1422406454729132</string>
+
+    <string name="google_api_key">AIzaSyB6aXkxXuTKeHhSFXbPg16nao-w361DU2Q</string>
+    <!--string name="google_client_key">880176324451-2l558qjsoqjjplpom5qvgjd9v6aqlji0.apps.googleusercontent.com</string-->
+
+    <string name="title_activity_view_flipper">ViewFlipper</string>
+    <string name="view_flipper_login">Login</string>
+    <string name="view_flipper_register">Register</string>
+
+    <string name="title_activity_login">Login</string>
+
+    <string name="title_activity_home">Home</string>
+    <drawable name="transparent_actionbar">#FF000000</drawable>
+    <string name="home_fragment_create">Create</string>
+    <string name="home_fragment_search">Search</string>
+
+    <string name="create_name">Event Title</string>
+    <string name="create_detail">Event Details</string>
+    <string name="create_equipment">Equipment(s):</string>
+    <string name="create_equipment_hint"><i>Optional</i></string>
+    <string name="create_fees">Fees:</string>
+    <string name="create_fees_hint"><i>Optional</i></string>
+    <string name="create_max_attendance">Max Attendance:</string>
+    <string name="create_date">Date:</string>
+    <string name="create_time">Time:</string>
+    <string name="create_address">Address:</string>
+    <string name="create_next">Next</string>
+
+    <string name="invite">Send invitations!</string>
+    <string name="welcome">App Invite\nQuickstart</string>
+    <string name="referrer_hint">Deep link not provided</string>
+    <string name="deep_link_default">Deep link not set</string>
+    <string name="invitation_id_default">Invitation ID not set</string>
+    <string name="invite_friends">Invite Friends</string>
+
+    <string name="invitation_title">Join RecFit</string>
+    <string name="invitation_message">Click here to join RecFit</string>
+    <string name="invitation_deep_link">http://recfitapp.com</string>
+    <string name="invitation_custom_image">https://pbs.twimg.com/profile_images/642406043037757440/f0ucTVdH.png</string>
+    <string name="invitation_cta">Install!</string>
+    <string name="invitation_subject">Try this great app!</string>
+
+    <string name="deep_link_fmt" formatted="false">Deep Link: %s</string>
+    <string name="invitation_id_fmt" formatted="false">Invitation ID: %s</string>
+
+    <string name="sent_invitations_fmt" formatted="false">Sent %d invitations</string>
+    <string name="send_failed">Sending invitations failed</string>
+    <string name="invite_dialog_title">You got an invitation!</string>
+
+    <string name="google_play_services_error">Google Play Services Error</string>
+    <string name="custom_invite">Custom Invite</string>
+
+
+    <string name="title_activity_register">Register</string>
+    <string name="register_from_login"><u>Register</u></string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create">Create</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_mapcreate">Map</string>
+    <string name="title_activity_event_detail">EventDetail</string>
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="title_activity_notification">notification</string>
+    <string name="title_activity_event_creation">eventCreation</string>
+    <string name="title_activity_invite">Invite</string>
+    <string name="message_hint">Say anything</string>
+    <string name="send">Send</string>
+    <string name="google_sign_in">Sign in with Google</string>
+    <string name="app_id">1422406454729132</string>
+
+    <string name="done_edit_profile">Done</string>
+
+    <string name="select_age_group">Age:</string>
+    <string-array name="age_group">
+        <item>17 or younger</item>
+        <item>18-25</item>
+        <item>26-35</item>
+        <item>36-45</item>
+        <item>46+</item>
+    </string-array>
+
+    <string-array name="gym_membership">
+        <item>24 Hour Fitness</item>
+        <item>Anytime Fitness</item>
+        <item>Bally Total Fitness</item>
+        <item>Equinox</item>
+        <item>Gold\'s Gym</item>
+        <item>LA Fitness</item>
+        <item>LifeTime Fitness</item>
+        <item>YMCA Fitness</item>
+        <item>Other</item>
+        <item>N/A</item>
+    </string-array>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item>My Events</item>
+        <item >Notifications</item>
+        <item >Invite Friends</item>
+        <item >Logout</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item></item>
+        <item>@drawable/home_icon</item>
+        <item>@drawable/notification_icon</item>
+        <item>@drawable/event_icon</item>
+        <item>@drawable/invite_friends_icon</item>
+        <item>@drawable/logout_icon</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_edit_profile_image">EditProfileImage</string>
+    <string name="title_activity_my_event_detail">MyEventDetail</string>
+    <string name="title_activity_edit_interests">EditInterests</string>
+    <string name="title_activity_intercept">Intercept</string>
+    <string name="title_activity_invite_deep_link">invite_deep_link</string>
+
+
+</resources>

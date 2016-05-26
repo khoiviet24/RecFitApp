@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/listInvitePicture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Invite Name"
+            android:id="@+id/invite_list_txt"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/listInvitePicture"
+            android:layout_toEndOf="@+id/listInvitePicture"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:textSize="10sp"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="khoiviet24.recfit.Create"
+    android:id="@+id/create"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:isScrollContainer="false"
+    android:focusableInTouchMode="true"
+    android:src="@drawable/create_bar"
+    android:background="@drawable/create_background">
+
+    <!--TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_box"
+        android:text="@string/create_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+       /-->
+
+    <EditText
+        android:layout_alignLeft="@+id/equipment_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_txt"
+        android:textColor="#000000"
+        android:hint="@string/create_name"
+        android:textColorHint="@color/grey"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:theme="@style/RecFitYellow"/>
+
+    <!--TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_box"
+        android:text="@string/create_detail"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" /-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:layout_alignLeft="@+id/equipment_txt"
+        android:id="@+id/detail_txt"
+        android:textColor="@color/black"
+        android:hint="@string/create_detail"
+        android:textColorHint="@color/grey"
+        android:imeOptions="actionDone"
+        android:theme="@style/RecFitYellow"
+        android:layout_below="@+id/name_txt"/>
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/create_equipment"
+        android:id="@+id/equipment_box"
+        android:textColor="#000000"/-->
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_equipment_icon"
+            android:src="@drawable/create_equipment"
+            android:layout_alignTop="@+id/equipment_txt"
+            android:layout_alignBottom="@+id/equipment_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/detail_txt"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/create_equipment_icon"
+            android:id="@+id/equipment_txt"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:hint="@string/create_equipment_hint"
+            android:textColorHint="@color/grey"
+            android:imeOptions="actionDone"
+            android:theme="@style/RecFitYellow"
+            android:layout_below="@+id/detail_txt"/>
+
+
+
+    <!--TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/create_fees"
+        android:id="@+id/fees_box"
+        android:textColor="#000000"/-->
+
+    <!--TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/create_max_attendance"
+            android:id="@+id/max_attendance_box"
+            android:textColor="#000000"/-->
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_fees_icon"
+        android:src="@drawable/create_fees"
+        android:layout_alignTop="@+id/fees_txt"
+        android:layout_alignBottom="@+id/fees_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/equipment_txt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/equipment_txt"
+        android:id="@+id/fees_txt"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:hint="@string/create_fees_hint"
+        android:textColorHint="@color/grey"
+        android:imeOptions="actionDone"
+        android:theme="@style/RecFitYellow"
+        android:layout_toRightOf="@id/create_fees_icon"/>
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_max_attendance_icon"
+        android:src="@drawable/create_invite"
+        android:layout_alignTop="@id/max_attendance_txt"
+        android:layout_alignBottom="@id/max_attendance_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fees_txt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fees_txt"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/max_attendance_txt"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:theme="@style/RecFitYellow"
+        android:layout_toRightOf="@id/create_max_attendance_icon"
+        android:hint="Max Attendance"
+        android:textColorHint="@color/grey"/>
+
+
+    <!--LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/create_date"
+            android:id="@+id/date_box"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/create_time"
+            android:id="@+id/time_box"
+            android:textColor="#000000"/>
+
+    </LinearLayout-->
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_date_time_icon"
+        android:src="@drawable/create_date"
+        android:layout_alignTop="@+id/date_time_layout"
+        android:layout_alignBottom="@+id/date_time_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/max_attendance_txt"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_time_layout"
+        android:orientation="horizontal"
+        android:layout_below="@id/max_attendance_txt"
+        android:layout_toRightOf="@id/create_date_time_icon"
+        >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@+id/max_attendance_txt"
+            android:id="@+id/date_txt"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:nextFocusDown="@+id/time_txt"
+            android:theme="@style/RecFitYellow"
+            android:hint="Date"
+            android:textColorHint="@color/grey"/>
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@+id/date_txt"
+            android:id="@+id/time_txt"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:theme="@style/RecFitYellow"
+            android:hint="Time"
+            android:textColorHint="@color/grey"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/create_address"
+        android:id="@+id/address_box"
+        android:textColor="#000000"
+        android:layout_below="@id/date_time_layout"/-->
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_icon"
+        android:src="@drawable/create_location"
+        android:layout_alignTop="@+id/google_place_txt"
+        android:layout_alignBottom="@+id/google_place_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/date_time_layout"/>
+
+    <EditText
+        android:id="@+id/google_place_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hyperlink_blue"
+        android:layout_below="@id/date_time_layout"
+        android:hint="Address"
+        android:textColorHint="@color/grey"
+        android:layout_toRightOf="@id/location_icon"/>
+
+    <!--fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        /-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="@string/create_next"
+            android:id="@+id/publish_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/grey"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
